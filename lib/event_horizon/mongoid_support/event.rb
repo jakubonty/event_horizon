@@ -10,7 +10,7 @@ class Event
   include ::Mongoid::Timestamps
 
 
-  store_in :events
+  store_in collection: "events"
 
   # Document keys
 
