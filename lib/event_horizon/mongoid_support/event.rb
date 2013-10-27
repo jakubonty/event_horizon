@@ -19,11 +19,11 @@ class Event
   field :document_id#,     :type => ObjectID
   field :document_type
 
-  index :created_at
+  index created_at: 1
 
   # Associations
 
-  referenced_in :user
+  belongs_to :user
 
 
   # Public methods
